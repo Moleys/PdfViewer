@@ -271,7 +271,7 @@ public class MainActivity extends CyaneaAppCompatActivity {
                 .onTap(this::toggleBottomNavigationVisibility)
                 .onPageScroll(this::toggleBottomNavigationAccordingToPosition)
                 .scrollHandle(new DefaultScrollHandle(this))
-                .spacing(10) // in dp
+                .spacing(0) // in dp
                 .onError(this::handleFileOpeningError)
                 .onPageError((page, err) -> Log.e(TAG, "Cannot load page " + page, err))
                 .pageFitPolicy(FitPolicy.WIDTH)
